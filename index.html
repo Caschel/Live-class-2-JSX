@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- ============================================
+  HEAD SECTION
+  - Meta tags for charset and viewport
+  - Google Fonts: Inter (weights: 400, 500, 600, 700)
+  - External stylesheet link
+============================================ -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +16,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<!-- ============================================
+  PAGE LABEL
+  - Fixed badge at top showing version
+============================================ -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+
+    <!-- ============================================
+  CARDS CONTAINER
+  - Flexbox row layout for pricing cards
+============================================ -->
     <div class="cards-container">
+
+        
+        <!-- ============================================
+        CARD 1: HOBBY (Free tier)
+        - Secondary button style
+        - 3 feature items
+        ============================================= -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Hobby</h3>
@@ -38,6 +60,13 @@
             </div>
             <button class="download-button secondary">Download</button>
         </div>
+
+
+        <!-- ============================================
+        CARD 2: PRO (Paid tier)
+        - Primary button style (dark background)
+        - 4 feature items
+        ============================================= -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Pro</h3>
@@ -68,6 +97,47 @@
                 </div>
             </div>
             <button class="download-button primary">Get Pro</button>
+        </div>
+       
+       
+        <!-- ============================================
+        CARD 3: ENTERPRISE (Custom tier)
+        - Primary button style (dark background)
+        - 5 feature items
+        ============================================= -->
+
+        <div class="card">
+            <div class="card-top">
+                <h3 class="card-title">Enterprise</h3>
+                <p class="card-price">
+                    <span class="card-price-amount">Custom</span>
+                </p>
+                <div class="card-content">
+                    <p class="includes-text">Contact us for:</p>
+                    <ul class="features-list">              <li>
+                            <span class="checkmark">✓</span>
+                            Custom Agent limits
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Dedicated support
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Custom integrations
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Onboarding and training
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Service level agreement
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="download-button primary">Contact Sales</button>
         </div>
     </div>
 </body>
