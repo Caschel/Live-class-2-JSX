@@ -9,3 +9,21 @@
     justify-content: center;
     align-items: flex-start;
 }
+
+/* Page label (version badge) */
+.page-label {
+    position: fixed;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #666;
+    background: #fff;
+    padding: 8px 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.page-label strong {
+    color: #333;
+}
